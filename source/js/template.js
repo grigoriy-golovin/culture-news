@@ -56,35 +56,35 @@ var createSlid = function (data) {
 	slid.querySelector(".article__text").textContent = data.text;
 	slid.removeAttribute("id");
 	return slid;
-}
+};
 
 for (var i = 0; i < articleData.length; i++) {
 	articleInsert.appendChild(createSlid(articleData[i]));
 }
 
-
 var newsData = [
 	{
-		image: 'img/birds.jpg',
-		title: 'Новости культуры России и всего мира',
-		text: 'В минувшие выходные в Москве на фестивале «Оберег» вручили первую премию Russian World Music Awards',
+		image: "img/birds.jpg",
+		title: "Новости культуры России и всего мира",
+		text:
+			"В минувшие выходные в Москве на фестивале «Оберег» вручили первую премию Russian World Music Awards",
 	},
-		{
-		image: 'img/monument.jpg',
-		title: 'Открытие нового памятника Евгению Леонову',
-		text: '10 сентября в 15:00 был открыт памятник писателю',
+	{
+		image: "img/monument.jpg",
+		title: "Открытие нового памятника Евгению Леонову",
+		text: "10 сентября в 15:00 был открыт памятник писателю",
 	},
-		{
-		image: 'img/writer.jpg',
-		title: 'Беседы с писателями',
-		text: 'Русские писатели говорят о важности искусства',
+	{
+		image: "img/writer.jpg",
+		title: "Беседы с писателями",
+		text: "Русские писатели говорят о важности искусства",
 	},
-		{
-		image: 'img/patrik.jpg',
-		title: 'День и ночь св. Патрика: встреча старых друзей',
-		text: 'Не Джойсом единым живет Ирландия!',
+	{
+		image: "img/patrik.jpg",
+		title: "День и ночь св. Патрика: встреча старых друзей",
+		text: "Не Джойсом единым живет Ирландия!",
 	},
-]
+];
 
 var newsInsert = document.querySelector("#newsInsert");
 var templateNews = document
@@ -98,8 +98,145 @@ var createNews = function (data) {
 	item.querySelector(".news__item-text").textContent = data.text;
 	item.removeAttribute("id");
 	return item;
-}
+};
 
 for (var i = 0; i < newsData.length; i++) {
 	newsInsert.appendChild(createNews(newsData[i]));
 }
+
+var reviawsData = [
+	{
+		image: "img/monparas.jpg",
+		title: "«Шальные годы» Монпарнаса",
+		text:
+			"В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»",
+	},
+	{
+		image: "img/arms.jpg",
+		title: "Анатомия за 30 секунд",
+		text: "Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно-популярной литературе заметно вырос",
+	},
+	{
+		image: "img/ballerina.jpg",
+		title: "Русские балетные сезоны",
+		text:
+			"В Новом Иерусалиме стартовал необычный культурно-развлекательный спектакль, который покажут в новом театре",
+	},
+	{
+		image: "img/actors.jpg",
+		title: "Сферические чудаки",
+		text:
+			"Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды»",
+	},
+];
+
+var reviawsInsert = document.querySelector("#reviawsInsert");
+var templateReviaws = document
+	.querySelector("template")
+	.content.querySelector(".reviaws__item");
+
+var createReviaws = function (data) {
+	var item = templateReviaws.cloneNode(true);
+	item.querySelector(".reviaws__item-img").src = data.image;
+	item.querySelector(".reviaws__item-title").textContent = data.title;
+	item.querySelector(".reviaws__item-text").textContent = data.text;
+	item.removeAttribute("id");
+	return item;
+};
+
+for (var i = 0; i < reviawsData.length; i++) {
+	reviawsInsert.appendChild(createReviaws(reviawsData[i]));
+}
+
+var linkArticleData = [
+	{
+		image: "img/wristwatch.jpg",
+		title: "как все успевать",
+		link: "#",
+	},
+	{
+		image: "img/canyon.jpg",
+		title: "Удивительный каньон",
+		link: "#",
+	},
+	{
+		image: "img/bridge.jpg",
+		title: "Мост",
+		link: "#",
+	},
+	{
+		image: "img/aircraft.jpg",
+		title: "Высший пилотаж",
+		link: "#",
+	},
+];
+
+
+
+var linkArticleInsert = document.querySelector(".link-article__list");
+var templateLinkArticle = document
+	.querySelector("template")
+	.content.querySelector(".link-article__item");
+
+var createLinkArticle = function (data) {
+	var item = templateLinkArticle.cloneNode(true);
+	item.querySelector(".link-article__img").src = data.image;
+	item.querySelector(".link-article__title").textContent = data.title;
+	item.querySelector(".link-article__link").href = data.link;
+	return item;
+};
+
+for (var i = 0; i < linkArticleData.length; i++) {
+	linkArticleInsert.appendChild(createLinkArticle(linkArticleData[i]));
+}
+
+var linkEventData = [
+	{
+		image: "img/balloons.jpg",
+		title: "ВОЗДУШНЫЕ ШАРЫ",
+		link: "#",
+	},
+	{
+		image: "img/photosession.jpg",
+		title: "НЕОБЫЧНАЯ ФОТОСЕССИЯ",
+		link: "#",
+	},
+	{
+		image: "img/bird.jpg",
+		title: "Выставка птиц",
+		link: "#",
+	},
+];
+
+
+
+var linkEventInsert = document.querySelector(".link-event__list");
+var templateLinkEvent = document
+	.querySelector("template")
+	.content.querySelector(".link-event__item");
+
+var createLinkEvent = function (data) {
+	var item = templateLinkEvent.cloneNode(true);
+	item.querySelector(".link-event__img").src = data.image;
+	item.querySelector(".link-event__title").textContent = data.title;
+	item.querySelector(".link-event__link").href = data.link;
+	return item;
+};
+
+for (var i = 0; i < linkEventData.length; i++) {
+	linkEventInsert.appendChild(createLinkEvent(linkEventData[i]));
+}
+
+
+// решил что лучше скопировать разметку в HTML
+// var pageFooter = document.querySelector('.page-header').cloneNode(true);
+// pageFooter.querySelector('section').remove();
+
+// var copyright = document.createElement('b');
+// copyright.textContent = '&copy; 2018 Новости культуры. Все права защищены.'
+
+// pageFooter.append(copyright);
+// console.log(pageFooter);
+
+// var pageMain = document.querySelector('.page-main');
+// pageMain.after(pageFooter);
