@@ -65,13 +65,19 @@
 				</ul>
 			</section>
 			<section class="page-main__reviaws reviaws">
-<h2 class="reviaws__title">обзоры</h2>
+				<h2 class="reviaws__title">обзоры</h2>
 				<ul class="reviaws__list" id="reviawsInsert">
 					<!-- содержимое вставится через template.js -->
 				</ul>
 			</section>
 			<section class="page-main__ballet ballet">
-				<img src="img/twine.jpg" alt="балерина на шпагате" class="ballet__img">
+				<img
+					src="img/twine.jpg"
+					alt="балерина на шпагате"
+					class="ballet__img"
+					width="320"
+					height="176"
+				/>
 				<h2 class="ballet__title">Ох, уж этот балет</h2>
 				<a href="#" class="ballet__link">смотреть</a>
 			</section>
@@ -86,11 +92,9 @@
 				</ul>
 			</section>
 		</main>
-		<footer class="main-footer">
-		<h1 class="page-footer__title">Новости культуры</h1>
-			<ul
-				class="page-footer__menu site-list"
-			>
+		<footer class="page-footer">
+			<h1 class="page-footer__title">Новости культуры</h1>
+			<ul class="page-footer__menu site-list">
 				<li class="site-list__item">
 					<a href="#" class="site-list__link">новости</a>
 				</li>
@@ -124,35 +128,37 @@
 			<li id="templateArticle" class="article-list__item slider__item article">
 				<picture>
 					<source media="(min-width: 1440px)" srcset="" />
-					<img class="article__img" srcset="" />
+					<img class="article__img" srcset="" width="320" height="372"/>
 				</picture>
 				<h2 class="article__titel"></h2>
 				<p class="article__text"></p>
 			</li>
 
 			<li id="templateNews" class="news__item">
-						<img class="news__item-img">
-						<h3 class="news__item-title"></h3>
-						<p class="news__item-text"></p>
-					</li>
+				<img class="news__item-img" width="127" height="91" />
+				<div class="news__item-description">
+					<h3 class="news__item-title"></h3>
+					<p class="news__item-text"></p>
+				</div>
+			</li>
 
-					<li class="reviaws__item">
-						<img class="reviaws__item-img">
-						<h3 class="reviaws__item-title"></h3>
-						<p class="reviaws__item-text"></p>
-					</li>
+			<li class="reviaws__item">
+				<img class="reviaws__item-img" width="288" height="203"/>
+				<h3 class="reviaws__item-title"></h3>
+				<p class="reviaws__item-text"></p>
+			</li>
 
-					<li class="link-article__item">
-						<img  class="link-article__img">
-						<h3 class="link-article__title"></h3>
-						<a  class="link-article__link">смотреть</a>
-					</li>
+			<li class="link-article__item">
+				<img class="link-article__img" width="288" height="146"/>
+				<h3 class="link-article__title"></h3>
+				<a class="link-article__link">смотреть</a>
+			</li>
 
-					<li class="link-event__item">
-						<img  class="link-event__img">
-						<h3 class="link-event__title"></h3>
-						<a  class="link-event__link">смотреть</a>
-					</li>
+			<li class="link-event__item">
+				<img class="link-event__img" width="288" height="310"/>
+				<h3 class="link-event__title"></h3>
+				<a class="link-event__link">смотреть</a>
+			</li>
 		</template>
 		<script type="text/javascript" src="js/template.min.js"></script>
 		<script type="text/javascript" src="js/navMenuScript.min.js"></script>

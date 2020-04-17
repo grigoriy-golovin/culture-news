@@ -1,0 +1,96 @@
+.news {
+	width: 288px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.news__title {
+	font-family: "Raleway", sans-serif;
+	font-weight: 900;
+	font-size: 17px;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	margin: 0;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+}
+
+.news__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.news__item {
+	margin: 0 auto;
+	margin-bottom: 26px;
+	padding: 0;
+	width: 288px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.news__item-img {
+	width: 127px;
+	height: 91px;
+	display: block;
+	margin: 0;
+}
+
+.news__item-description {
+	width: 146px;
+}
+
+.news__item-title {
+	font-family: "Playfair Display", serif;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 19px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.news__item-text {
+	font-family: "Raleway", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.news__item:first-child {
+	flex-direction: column;
+
+	.news__item-img {
+		width: 288px;
+		height: 334px;
+		margin-bottom: -334px;
+	}
+
+	.news__item-description {
+		width: 288px;
+	}
+
+	.news__item-title {
+		font-size: 20px;
+		line-height: 27px;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-top: 162px;
+		margin-bottom: 15px;
+		height: 54px;
+	}
+
+	.news__item-text {
+		width: 235px;
+		height: 83px;
+		font-size: 14px;
+		padding-right: 15px;
+		padding-left: 15px;
+		margin-bottom: 20px;
+	}
+}
