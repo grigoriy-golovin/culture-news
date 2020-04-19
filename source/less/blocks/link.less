@@ -1,0 +1,32 @@
+.link {
+
+width: 170px;
+height: 47px;
+
+
+
+background: rgba(0, 0, 0, 0.7);
+border: 2px solid @accent-color;
+box-sizing: border-box;
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+color: @white-color;
+font-family: Raleway, sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 43px;
+letter-spacing: 2px;
+
+	&::after {
+		content: "";
+		background-image: url(../img/arrow-link.svg);
+		background-repeat: no-repeat;
+		width: 25px;
+		height: 25px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+}
