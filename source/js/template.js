@@ -169,6 +169,11 @@ var linkArticleData = [
 		title: "Высший пилотаж",
 		link: "#",
 	},
+	{
+		image: "img/canyon.jpg",
+		title: "Удивительный каньон",
+		link: "#",
+	},
 ];
 
 

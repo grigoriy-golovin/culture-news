@@ -14,6 +14,7 @@ var slideShow = (function () {
       _indicatorIndex = 0,
       _indicatorIndexMax = _sliderItems.length - 1,
       _stepTouch = 50,
+      _selector = selector,
       _config = {
         isAutoplay: false, // автоматическая смена слайдов
         directionAutoplay: "next", // направление смены слайдов
@@ -122,6 +123,7 @@ var slideShow = (function () {
     var _addIndicators = function () {
       var indicatorsContainer = document.createElement("ol");
       indicatorsContainer.classList.add("slider__indicators");
+      indicatorsContainer.classList.add(selector.substr(1) + "__indicators");
       for (var i = 0, length = _sliderItems.length; i < length; i++) {
         var sliderIndicatorsItem = document.createElement("li");
         if (i === 0) {
@@ -227,6 +229,9 @@ var slideShow = (function () {
   };
 })();
 
-slideShow(".slider", {
+slideShow(".article-list", {
+  isAutoplay: false,
+});
+slideShow(".link-article", {
   isAutoplay: false,
 });

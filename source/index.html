@@ -90,9 +90,9 @@
 			</section>
 			<section class="page-main__ballet ballet">
 				<picture>
-					<source media="(min-width: 1440px)" src="img/twine-desktop.jpg"/>
+					<source media="(min-width: 1440px)" src="img/twine-desktop.jpg" />
 					<img
-						srcset="img/twine-mobile.jpg , img/twine-mobile@2x.jpg 2x"
+						srcset="img/twine-mobile.jpg, img/twine-mobile@2x.jpg 2x"
 						alt="балерина на шпагате"
 						class="ballet__img"
 						width="320"
@@ -102,10 +102,14 @@
 				<h2 class="ballet__title">Ох, уж этот балет</h2>
 				<a href="#" class="ballet__link link">смотреть</a>
 			</section>
-			<section class="page-main__link-article link-article">
-				<ul class="link-article__list">
-					<!-- содержимое вставится через template.js -->
-				</ul>
+			<section class="page-main__link-article link-article slider">
+				<div class="slider__wrapper">
+					<ul class="link-article__list slider__items">
+						<!-- содержимое вставится через template.js -->
+					</ul>
+				</div>
+				<button class="slider__control slider__control_prev">Предыдущая</button>
+				<button class="slider__control slider__control_next">Следущая</button>
 			</section>
 			<section class="page-main__link-event link-event">
 				<ul class="link-event__list">
@@ -169,7 +173,7 @@
 				<p class="reviaws__item-text"></p>
 			</li>
 
-			<li class="link-article__item">
+			<li class="link-article__item slider__item">
 				<img class="link-article__img" width="288" height="146" />
 				<h3 class="link-article__title"></h3>
 				<a class="link-article__link">смотреть</a>
@@ -178,7 +182,7 @@
 			<li class="link-event__item">
 				<img class="link-event__img" width="288" height="310" />
 				<h3 class="link-event__title"></h3>
-				<a class="link-event__link">смотреть</a>
+				<a class="link-event__link link">смотреть</a>
 			</li>
 		</template>
 		<script type="text/javascript" src="js/template.min.js"></script>
