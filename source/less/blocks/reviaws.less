@@ -115,3 +115,59 @@
 	border-right-width: 0;
 	margin-left: auto;
 }
+
+@media (min-width: @desktop-width) {
+	.reviaws {
+		margin: 0;
+		width: 100%;
+	}
+
+	.reviaws__list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 30px;
+		margin-bottom: 20px;
+	}
+
+	.reviaws__item {
+		margin-bottom: 17px;
+	}
+
+	.reviaws__item-img {
+		width: 370px;
+		height: 203px;
+	}
+
+	.reviaws__indicators {
+		width: 426px;
+	}
+
+	.reviaws__button {
+		width: 30px;
+		height: 28px;
+	}
+
+	.reviaws__button--next {
+		border-left: 1px solid rgba(0, 0, 0, 0.3);
+		margin-left: 92px;
+	}
+	.reviaws__button--prev {
+		border-right: 1px solid rgba(0, 0, 0, 0.3);
+		margin-right: 92px;
+	}
+
+	.reviaws__indicator-item {
+		width: auto;
+		padding: 0 3px;
+		height: 40px;
+		font-size: 17px;
+		line-height: 38px;
+		text-align: center;
+	}
+
+	.reviaws__indicator-item--active {
+		border: none;
+		border-bottom: 3px solid @accent-color;
+		color: @black-color;
+	}
+}

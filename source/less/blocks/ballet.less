@@ -12,6 +12,15 @@
 	display: block;
 }
 
+.ballet__text-wrapper {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	bottom: 42px;
+	align-items: center;
+}
+
 .ballet__title {
 	font-family: Raleway, sans-serif;
 	font-style: normal;
@@ -21,13 +30,39 @@
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	color: @white-color;
-	margin-top: -132px;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 .ballet__link {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 40px;
+
+}
+
+
+@media (min-width: @desktop-width) {
+	.ballet {
+		width: 100%;
+		align-self: end;
+		margin: 0;
+	}
+
+	.ballet__img {
+		width: 770px;
+		display: block;
+	}
+
+	.ballet__title {
+font-size: 30px;
+line-height: 35px;
+
+	}
+
+	.ballet__text-wrapper {
+		flex-direction: row;
+		width: 544px;
+		justify-content: space-between;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 45px;
+	}
 }

@@ -1,7 +1,6 @@
 .link-event {
 	margin: 0 auto;
 	width: 288px;
-
 }
 
 .link-event__list {
@@ -30,15 +29,15 @@
 	margin: 0;
 	top: 36px;
 	font-family: Playfair Display, serif;
-font-style: normal;
-font-weight: 900;
-font-size: 20px;
-line-height: 180%;
-text-align: center;
-letter-spacing: 2px;
-text-transform: uppercase;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 180%;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 
-color: @white-color;
+	color: @white-color;
 }
 
 .link-event__title--light {
@@ -46,9 +45,32 @@ color: @white-color;
 }
 
 .link-event__link {
-position: absolute;
-bottom: 40px;
+	position: absolute;
+	bottom: 40px;
 	left: 50%;
 	transform: translateX(-50%);
 }
 
+@media (min-width: @desktop-width) {
+	.link-event {
+		width: 100%;
+		margin: 0;
+	}
+	.link-event__img {
+		width: 370px;
+		height: 479px;
+	}
+
+	.link-event__list {
+		display: grid;
+		grid-gap: 33px;
+	}
+
+	.link-event__item {
+		margin: 0;
+	}
+
+	.link-event__title {
+		font-size: 30px;
+	}
+}
