@@ -198,16 +198,19 @@ for (var i = 0; i < linkArticleData.length; i++) {
 var linkEventData = [
 	{
 		image: "img/balloons.jpg",
+		imgIsLight: true,
 		title: "ВОЗДУШНЫЕ ШАРЫ",
 		link: "#",
 	},
 	{
 		image: "img/photosession.jpg",
+		imgIsLight: false,
 		title: "НЕОБЫЧНАЯ ФОТОСЕССИЯ",
 		link: "#",
 	},
 	{
 		image: "img/bird.jpg",
+		imgIsLight: false,
 		title: "Выставка птиц",
 		link: "#",
 	},
@@ -225,6 +228,10 @@ var createLinkEvent = function (data) {
 	item.querySelector(".link-event__img").src = data.image;
 	item.querySelector(".link-event__title").textContent = data.title;
 	item.querySelector(".link-event__link").href = data.link;
+	if (data.imgIsLight) {
+		item.querySelector(".link-event__title").classList.add('link-event__title--light');
+		item.querySelector(".link-event__link").classList.add('link--light');
+	}
 	return item;
 };
 

@@ -13,4 +13,42 @@
 .link-event__item {
 	margin: 0;
 	padding: 0;
+	position: relative;
+	margin-bottom: 30px;
 }
+
+.link-event__img {
+	width: 288px;
+	height: 310px;
+	display: block;
+}
+
+.link-event__title {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+	top: 36px;
+	font-family: Playfair Display, serif;
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 180%;
+text-align: center;
+letter-spacing: 2px;
+text-transform: uppercase;
+
+color: @white-color;
+}
+
+.link-event__title--light {
+	color: @black-color;
+}
+
+.link-event__link {
+position: absolute;
+bottom: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
