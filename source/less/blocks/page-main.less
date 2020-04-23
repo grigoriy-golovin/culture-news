@@ -2,10 +2,11 @@
 	.page-main {
 		display: grid;
 		grid-template-columns: 2fr 1fr;
-		// grid-template-rows: 1fr 1fr 1fr 1fr;
 		grid-gap: 30px;
 		padding: 0 135px;
 		margin: 0 auto;
+		margin-bottom: 105px;
+		position: relative;
 	}
 
 	.page-main__link-event {
@@ -15,5 +16,10 @@
 		grid-row-end: 4;
 	}
 
-
+	.page-main__link-article {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row-start: 4;
+		grid-row-end: 5;
+	}
 }
