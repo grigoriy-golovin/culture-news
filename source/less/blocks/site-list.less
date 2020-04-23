@@ -36,8 +36,12 @@
 @media (min-width: @desktop-width) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 1170px;
+    width: auto;
+    padding: 0 35px;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   .site-list__link {

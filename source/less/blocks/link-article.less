@@ -2,10 +2,12 @@
 	width: 288px;
 	margin: 0 auto;
 	margin-bottom: 27px;
+	align-self: end;
 }
 
 .link-article__list {
 	margin: 0;
+	margin-bottom: 45px;
 	padding: 0;
 	list-style: none;
 }
@@ -102,6 +104,10 @@
 	background-color: #000;
 }
 
+.link-article__conrtol {
+	display: none;
+}
+
 @media (min-width: @desktop-width) {
 	.link-article {
 		margin: 0;
@@ -121,7 +127,7 @@
 	}
 
 	.link-article__img {
-		width: 270px;
+		width: 90%;
 		height: 136px;
 		margin: 0 auto;
 		box-sizing: border-box;
@@ -176,7 +182,6 @@
 		left: -22px;
 		&::after {
 			border-left-width: 0;
-
 		}
 	}
 
@@ -184,7 +189,6 @@
 		right: -22px;
 		&::after {
 			border-right-width: 0;
-
 		}
 	}
 }

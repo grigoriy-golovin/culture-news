@@ -1,5 +1,5 @@
 .article-list {
-	width: 320px;
+	width: 100%;
 }
 
 .article-list__item {
@@ -47,6 +47,9 @@
   background-color: #fff;
 }
 
+.article-list__control {
+  display: none;
+}
 
 @media (min-width: @desktop-width) {
 	.article-list {
@@ -98,12 +101,12 @@
 
   .article-list__control_prev {
     left: 50%;
-    transform: translateX(-485px);
+    transform: translateX(-33vw);
   }
 
   .article-list__control_next {
     right: 50%;
-    transform: translateX(485px);
+    transform: translateX(33vw);
 
   }
 
